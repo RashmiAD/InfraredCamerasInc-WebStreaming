@@ -1,6 +1,29 @@
 # This file guides you through the implemtation of Janus Gateway for Streaming video to the browser.
 
-* Installation of Janus -
-    1. Dependancies to be met -
+* Installation of Janus :
+    - Dependancies to be met :
+        Install all the libs using the following command
+        sudo apt-get install libmicrohttpd-dev libjansson-dev libnice-dev libssl-dev libsrtp-dev libsofia-sip-ua-dev libglib2.0-dev libopus-dev libogg-dev libini-config-dev libcollection-dev pkg-config gengetopt libtool automake dh-autoreconf
         
-      
+        1. Install Jansson :
+            sudo apt-get install libjansson-dev
+            
+        2. Install libconfig :
+            sudo apt-get install libconfig-dev
+           
+        3. Install libnice :
+           a. Dependency Glib (version 2.50.3) :
+               - Dependency libffi : sudo apt-get install libffi-dev (version >= 3.0.0 )
+               - Dependency libmount : sudo apt-get install libmount-dev (version 2.27.1)
+               - Download lib from http://www.linuxfromscratch.org/blfs/view/8.0/general/glib2.html
+               - Extract using tar -xvf glib-2.50.3.tar.xz
+               - cd glib-2.50.3
+               - sh autogen.sh
+               - ./configure
+               - make
+               - sudo make install
+              
+            b. libnice installation :
+                - 
+            
+                 
