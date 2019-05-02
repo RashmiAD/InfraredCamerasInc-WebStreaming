@@ -1,4 +1,3 @@
-# InfraredCamerasInc-WebStreaming
-Web Stremaing thorugh WebRTC from FMX (HummingBoard)
+#Video Streaming
 
 #Yet to be written
