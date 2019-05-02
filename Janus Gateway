@@ -23,7 +23,15 @@
                - make
                - sudo make install
               
-            b. libnice installation :
-                - 
+            b. Dependency gtk-doc : sudo apt-get install gtk-doc-tools 
+            c. libnice installation :
+                - sh autogen.sh
+                - ./configure --prefix=/usr
+                - make
+                - sudo make install
+                
+         4. Install libsrtp (version 1.5.4) :
+         
+         5. Install OpenSSL (version 1.1.1b) :
             
                  
