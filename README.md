@@ -16,11 +16,14 @@
     4. RTP is a combination of two parts - 
     
         a. Real Time Protocol (RTP) - It carries real-time data.
+        
         b. Real Time Control Protocol (RTCP) - It monitors quality-of-service (QoS) and conveys information about participants.            It is periodic transmission of control packets to all participants in the session. It carries persistent transport-            level identifier for an RTP source called the canonical name or CNAME
     5. Structure of RTP packet -
     
         |-----------|------------|------------|-------------------|
+        
         | IP Header | UDP Header | RTP Header |    RTP Payload    |
+        
         |-----------|------------|------------|-------------------|
     6. There is sequence number for each RTP data packet in order to synchronize at the receiver end, but only the sequence            number isn't sufficient to synchronize we need timestamp as well. Many RTP packets may have same timestamp but                  definitely different sequence number. Best use of timestamp is synchronizing audio and video RTP packets since audio and        video are always transmitted seperately.
     7. Application Level Framing -
