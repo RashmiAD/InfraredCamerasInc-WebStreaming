@@ -24,3 +24,6 @@
     6. There is sequence number for each RTP data packet in order to synchronize at the receiver end, but only the sequence            number isn't sufficient to synchronize we need timestamp as well. Many RTP packets may have same timestamp but                  definitely different sequence number. Best use of timestamp is synchronizing audio and video RTP packets since audio and        video are always transmitted seperately.
     7. Application Level Framing -
         RTP is intended to be malleable (capable of being easily changed) to provide adequate functionality.
+        
+* Real Time Streaming Protocol (RTSP) -
+    RTSP is a network control protocol which uses RTP but has additional control functionalities like setup, play, pause and       teardown the stream. 
