@@ -16,7 +16,7 @@
     4. RTP is a combination of two parts - 
         a. Real Time Protocol (RTP) - It carries real-time data.
         b. Real Time Control Protocol (RTCP) - It monitors quality-of-service (QoS) and conveys information about participants.            It is periodic transmission of control packets to all participants in the session. It carries persistent transport-            level identifier for an RTP source called the canonical name or CNAME
-    5. Structure of TRP packet
+    5. Structure of RTP packet -
         |-----------|------------|------------|-------------------|
         | IP Header | UDP Header | RTP Header |    RTP Payload    |
         |-----------|------------|------------|-------------------|
