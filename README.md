@@ -14,9 +14,11 @@
     2. RTP carries real time content like timestamp and control mechanisms for synchronizing different streams with timing            properties.
     3. RTP runs over User Datagram Protocol (UDP in transport layer) .
     4. RTP is a combination of two parts - 
+    
         a. Real Time Protocol (RTP) - It carries real-time data.
         b. Real Time Control Protocol (RTCP) - It monitors quality-of-service (QoS) and conveys information about participants.            It is periodic transmission of control packets to all participants in the session. It carries persistent transport-            level identifier for an RTP source called the canonical name or CNAME
     5. Structure of RTP packet -
+    
         |-----------|------------|------------|-------------------|
         | IP Header | UDP Header | RTP Header |    RTP Payload    |
         |-----------|------------|------------|-------------------|
