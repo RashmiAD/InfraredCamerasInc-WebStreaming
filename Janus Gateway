@@ -51,6 +51,12 @@
         - make
         - sudo make install
         
-* Installing gStreamer :
+* Installation of gStreamer :
     - gStreamer is a pipeline-based multimedia framework that we will use to encode the video for streaming. 
     - To install gstreamer: sudo apt-get install gstreamer1.0
+
+* Installation of Nginx :
+    - Nginx is a lightweight web server that we will use to serve the Janus demos, specifically the streaming example. 
+    - To install this: sudo apt-get install nginx
+    - Now copy the Janus HTML content to the Nginx server root: sudo cp -r /opt/janus/share/janus/demos/ /usr/share/nginx/www/
+    - Now start Nginx: sudo service nginx start
