@@ -50,6 +50,8 @@
         - ./configure --disable-websockets --disable-data-channels --disable-rabbitmq --disable-docs --prefix=/opt/janus
         - make
         - sudo make install
+        **Note:- If there is undefined reference to `DTLSv1_2_method' error then clone the repo from the link 
+                 git clone --single-branch --branch dtls-dbg https://github.com/jswirl/janus-gateway.git
         
 * Installation of gStreamer :
     - gStreamer is a pipeline-based multimedia framework that we will use to encode the video for streaming. 
@@ -57,6 +59,13 @@
 
 * Installation of Nginx :
     - Nginx is a lightweight web server that we will use to serve the Janus demos, specifically the streaming example. 
-    - To install this: sudo apt-get install nginx
-    - Now copy the Janus HTML content to the Nginx server root: sudo cp -r /opt/janus/share/janus/demos/ /usr/share/nginx/www/
+    - To install this: sudo apt-get install nginx 
+    - Now copy the Janus HTML content to the Nginx server root: sudo cp -r /opt/janus/share/janus/demos/ /usr/share/nginx/html/ (delete already present html folder from nginx)
     - Now start Nginx: sudo service nginx start
+    
+* Executing Gstreamer commands :
+   - For H264 encoding :
+        gst-launch-1.0 v4l2src device=/dev/video1 ! 'video/x-raw, width=640, height=480, framerate=30/1' ! videoconvert ! x264enc pass=qual quantizer=20 tune=zerolatency ! rtph264pay config-interval=1 pt=96 ! udpsink host=127.0.0.1 port=8004
+   
+   - For VP8 encoding :
+        gst-launch-1.0  v4l2src device=/dev/video0  !  "video/x-raw, format=(string)I420, width=(int)640, height=(int)480, pixel-aspect-ratio=(fraction)1/1, framerate=(fraction)30/1, interlace-mode=(string)progressive" ! vp8enc error-resilient=true, cpu-used=5, deadline=1 ! rtpvp8pay ! udpsink host=127.0.0.1 port=5004
