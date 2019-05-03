@@ -47,4 +47,6 @@
      - Installing Janus through github :
         - git clone https://github.com/meetecho/janus-gateway.git
         - sh autogen.sh
-        - 
+        - ./configure --disable-websockets --disable-data-channels --disable-rabbitmq --disable-docs --prefix=/opt/janus
+        - make
+        - sudo make install
