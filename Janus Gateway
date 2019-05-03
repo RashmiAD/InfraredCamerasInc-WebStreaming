@@ -50,3 +50,7 @@
         - ./configure --disable-websockets --disable-data-channels --disable-rabbitmq --disable-docs --prefix=/opt/janus
         - make
         - sudo make install
+        
+* Installing gStreamer :
+    - gStreamer is a pipeline-based multimedia framework that we will use to encode the video for streaming. 
+    - To install gstreamer: sudo apt-get install gstreamer1.0
