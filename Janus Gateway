@@ -25,6 +25,7 @@
               
             b. Dependency gtk-doc : sudo apt-get install gtk-doc-tools 
             c. libnice installation :
+                - git clone https://gitlab.freedesktop.org/libnice/libnice
                 - sh autogen.sh
                 - ./configure --prefix=/usr
                 - make
