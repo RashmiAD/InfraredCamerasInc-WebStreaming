@@ -30,6 +30,7 @@
                 - ./configure --prefix=/usr
                 - make
                 - sudo make install
+                **Note:- If warnings are treated as errors and compilation fails then use --enable-compile-warnings=no during configuration
                 
          4. Install libsrtp (version 1.5.4) :
             - git clone https://github.com/cisco/libsrtp
