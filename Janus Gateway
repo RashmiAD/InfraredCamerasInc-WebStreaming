@@ -19,7 +19,7 @@
                - Extract using tar -xvf glib-2.50.3.tar.xz
                - cd glib-2.50.3
                - sh autogen.sh
-               - ./configure
+               - ./configure --prefix=/usr --with-pcre=system
                - make
                - sudo make install
               
