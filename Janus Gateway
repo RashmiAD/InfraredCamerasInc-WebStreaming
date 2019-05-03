@@ -54,6 +54,33 @@
         - sudo make install
         **Note:- If there is undefined reference to `DTLSv1_2_method' error then clone the repo from the link 
                  git clone --single-branch --branch dtls-dbg https://github.com/jswirl/janus-gateway.git
+                 
+     - Configuring Janus gateway :
+        - cd janus-gateway
+        - sudo make configs
+        - sudo vim /opt/janus/etc/janus/janus.plugin.streaming.jcfg
+        - Edit as follows :
+            general: {
+            #admin_key = "supersecret"              # If set, mountpoints can be created via API
+                                                                        # only if this key is provided in the request
+            #events = false                                 # Whether events should be sent to event
+                                                                        # handlers (default=true)
+            }
+
+            gstreamer-sample: {
+                    type = "rtp"
+                    id = 1
+                    description = "Opus/VP8 live stream coming from gstreamer"
+                    audio = false                                                           #true
+                    video = true
+            #       audioport = 5002
+            #       audiopt = 111
+            #       audiortpmap = "opus/48000/2"
+                    videoport = 5004
+                    videopt = 100
+                    videortpmap = "VP8/90000"
+            #       secret = "adminpwd"
+            }   
         
 * Installation of gStreamer :
     - gStreamer is a pipeline-based multimedia framework that we will use to encode the video for streaming. 
