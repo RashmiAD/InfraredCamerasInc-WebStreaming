@@ -1,6 +1,6 @@
 # This file guides you through the implemtation of Janus Gateway for Streaming video to the browser.
 
-* Installation of Janus :
+* Installation of Janus : https://github.com/meetecho/janus-gateway
     - Dependancies to be met :
         Install all the libs using the following command
         sudo apt-get install libmicrohttpd-dev libjansson-dev libnice-dev libssl-dev libsrtp-dev libsofia-sip-ua-dev libglib2.0-dev libopus-dev libogg-dev libini-config-dev libcollection-dev pkg-config gengetopt libtool automake dh-autoreconf
@@ -31,7 +31,20 @@
                 - sudo make install
                 
          4. Install libsrtp (version 1.5.4) :
+            - git clone https://github.com/cisco/libsrtp
+            - cd libsrtp
+            - ./configure
+            - make
+            - sudo make install
          
          5. Install OpenSSL (version 1.1.1b) :
+            - git clone https://github.com/openssl/openssl
+            - cd openssl
+            - ./config
+            - make
+            - sudo make install
             
-                 
+     - Installing Janus through github :
+        - git clone https://github.com/meetecho/janus-gateway.git
+        - sh autogen.sh
+        - 
