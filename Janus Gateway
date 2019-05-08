@@ -12,7 +12,9 @@
             sudo apt-get install libconfig-dev
            
         3. Install libnice :
-           a. Dependency Glib (version 2.50.3) :
+           a. Dependency gtk-doc : sudo apt-get install gtk-doc-tools 
+           
+           b. Dependency Glib (version 2.50.3) :
                - Dependency libffi : sudo apt-get install libffi-dev (version >= 3.0.0 )
                - Dependency libmount : sudo apt-get install libmount-dev (version 2.27.1)
                - Download lib from http://www.linuxfromscratch.org/blfs/view/8.0/general/glib2.html
@@ -22,8 +24,7 @@
                - ./configure --prefix=/usr --with-pcre=system
                - make
                - sudo make install
-              
-            b. Dependency gtk-doc : sudo apt-get install gtk-doc-tools 
+            
             c. libnice installation :
                 - git clone https://gitlab.freedesktop.org/libnice/libnice
                 - sh autogen.sh
