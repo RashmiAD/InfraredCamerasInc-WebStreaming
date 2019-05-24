@@ -94,6 +94,7 @@
     - Edit the config file of nginx :
         - sudo vim /etc/nginx/sites-enabled/default
             change "root /var/www/html;" to "root /usr/share/nginx/html;" 
+            change "index index.html index.htm index.nginx-debian.html;" to "index index.html;"
     - Now start Nginx: sudo service nginx start
     
 * Executing Gstreamer commands :
