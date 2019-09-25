@@ -113,3 +113,6 @@
         
 * Checking the streams in the browser :
     - As the nginx server is configure for 127.0.0.1 (localhost) then open the page http://localhost and check the streams of video in the browser.
+   
+* Change the chrome settings of mdns and disbale it to avoid mdns error for janus
+    - chrome://flags/#enable-webrtc-hide-local-ips-with-mdns
