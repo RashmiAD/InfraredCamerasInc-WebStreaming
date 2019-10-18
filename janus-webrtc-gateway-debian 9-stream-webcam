@@ -88,6 +88,8 @@
                     videortpmap = "VP8/90000"
             #       secret = "adminpwd"
             }   
+            
+            **Note:- Comment out rest of the configurations apart from the mentioned above
         
 * Installation of gStreamer :
     - gStreamer is a pipeline-based multimedia framework that we will use to encode the video for streaming. 
