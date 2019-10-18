@@ -3,7 +3,7 @@
 * Installation of Janus : https://github.com/meetecho/janus-gateway
     - Dependancies to be met :
         Install all the libs using the following command
-        sudo apt-get install libmicrohttpd-dev libssl-dev libsrtp-dev libsofia-sip-ua-dev libopus-dev libogg-dev libini-config-dev libcollection-dev pkg-config gengetopt libtool automake dh-autoreconf
+        sudo apt-get install libmicrohttpd-dev libssl-dev libsofia-sip-ua-dev libopus-dev libogg-dev libini-config-dev libcollection-dev pkg-config gengetopt libtool automake dh-autoreconf
         
         1. Install Jansson :
             sudo apt-get install libjansson-dev
