@@ -21,6 +21,7 @@
                - Extract using tar -xvf glib-2.50.3.tar.xz
                - cd glib-2.50.3
                - sh autogen.sh
+               **Note:- In case of zlib error install zlib using : sudo apt-get install zlib1g-dev
                - ./configure --prefix=/usr --with-pcre=system
                - make
                - sudo make install
