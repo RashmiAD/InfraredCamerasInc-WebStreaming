@@ -31,7 +31,7 @@
                - make
                - sudo make install
             
-            c. libnice installation :
+            c. libnice installation (version 0.1.15):
                 - git clone https://gitlab.freedesktop.org/libnice/libnice
                 - sh autogen.sh
                 - ./configure --prefix=/usr (--enable-compile-warnings=no for ARM processor)
