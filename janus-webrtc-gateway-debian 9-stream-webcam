@@ -18,7 +18,7 @@
                - sudo apt-get install zlib1g-dev
                
            c. Dependency libpcre :
-               - sudo apt-get install libpcre-dev
+               - sudo apt-get install libpcre++-dev
            
            b. Dependency Glib (version 2.50.3) :
                - Dependency libffi : sudo apt-get install libffi-dev (version >= 3.0.0 )
