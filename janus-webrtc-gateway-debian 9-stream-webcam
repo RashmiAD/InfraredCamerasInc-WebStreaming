@@ -93,7 +93,8 @@
         
 * Installation of gStreamer :
     - gStreamer is a pipeline-based multimedia framework that we will use to encode the video for streaming. 
-    - To install gstreamer: sudo apt-get install gstreamer1.0
+    - To install gstreamer: 
+        - sudo apt-get install libgstreamer1.0-0 gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-libav gstreamer1.0-doc gstreamer1.0-tools gstreamer1.0-x gstreamer1.0-alsa gstreamer1.0-gl gstreamer1.0-gtk3 gstreamer1.0-qt5 gstreamer1.0-pulseaudio
 
 * Installation of Nginx :
     - Nginx is a lightweight web server that we will use to serve the Janus demos, specifically the streaming example. 
