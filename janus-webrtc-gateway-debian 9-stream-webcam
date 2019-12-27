@@ -102,7 +102,7 @@
     - Now copy the Janus HTML content to the Nginx server root: sudo cp -r /opt/janus/share/janus/demos/ /usr/share/nginx/html/ (delete already present html folder from nginx)
     - Edit the config file of nginx :
         - sudo vim /etc/nginx/sites-enabled/default
-            change "root /var/www/html;" to "root /usr/share/nginx/html;" 
+            change "root /var/www/html;" to "root /usr/share/nginx/demos;" 
             change "index index.html index.htm index.nginx-debian.html;" to "index index.html;"
     - Now start Nginx: sudo service nginx start
     
