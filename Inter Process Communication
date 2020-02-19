@@ -1,0 +1,19 @@
+Inter Process Communication (IPC) is the communication between two processes.
+There are two types of communications -
+  1. Communication between two related processes - parent-child processes
+  2. Communication between two unrelated processes
+
+Pipes - Communication between two related processes. It is half duplex mechanism i.e. first process can communicate with the second process. 
+        To achieve full duplex another pipe is to be created so that second process can communicate with the first process.
+        
+FIFO - Communication between two unrealted processes. It is full deplex mechanism.
+
+Message Queue - It is full duplex mechanism achieved by posting messages in the queue by one process and
+                retireving the messages from another process from the queue. Once the message is retrieved it is deleted from the queue.
+                
+Shared memory - Communication between two or more processes is done using a shared memory which is to be protected byt he processes by synchronization.
+
+Semaphores - These are used for synchronization. When one process accesses the memory it needs to be locked and released when the access is removed.
+
+Signals − Signal is a mechanism to communication between multiple processes by way of signaling. 
+          This means a source process will send a signal (recognized by number) and the destination process will handle it accordingly.
