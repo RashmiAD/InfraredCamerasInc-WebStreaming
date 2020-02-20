@@ -17,3 +17,11 @@ Semaphores - These are used for synchronization. When one process accesses the m
 
 Signals − Signal is a mechanism to communication between multiple processes by way of signaling. 
           This means a source process will send a signal (recognized by number) and the destination process will handle it accordingly.
+
+
+A process can terminate in either of the two ways −
+  Abnormally, occurs on delivery of certain signals, say terminate signal.
+  Normally, using _exit() system call (or _Exit() system call) or exit() library function.
+  The difference between _exit() and exit() is mainly the cleanup activity. 
+  exit() - The exit() does some cleanup before returning the control back to the kernel.
+  _exit() - The _exit() (or _Exit()) would return the control back to the kernel immediately.
